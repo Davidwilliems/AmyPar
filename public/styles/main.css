@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    height: 100vh;
+}
+.navbar-brand{
+    width: fit-content;
+    height: fit-content;
+    background-image: url(/images/AmyPar-Logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.header-container{
+    position: relative;
+    background-image: url(/images/istockphoto-1526986072-612x612.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.header-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.header-container main{
+    position: relative;
+    z-index: 2;
+}
+h1{
+    font-size: 5.375rem;
+    line-height: 103.2px;
+    letter-spacing: -4px;
+}
+.lead{
+    line-height: 30px;
+}
+@media (min-width: 998px) {
+    .cover-text{
+        width: 600px;
+}
+}
+
+@media (max-width: 568px ) {
+    h1{
+        font-size: 4.375rem;
+        line-height: 84px;
+    }
+}
+@media (min-width: 768px) {
+    .flex-md-equal > * {
+        flex: 1;
+    }
+}
+.pricing-header {
+    max-width: 700px;
+}
